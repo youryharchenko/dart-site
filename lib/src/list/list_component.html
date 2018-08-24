@@ -1,0 +1,20 @@
+<!-- Components info: https://webdev.dartlang.org/components -->
+<p *ngIf="items.isEmpty">
+  No applications.
+</p>
+
+<div *ngIf="items.isNotEmpty">
+  <ul>
+      <li *ngFor="let item of items; let i=index">
+          <div class="appItem">
+              <a href="{{item.appLink}}">{{item.appName}}</a>
+              <br/>
+              <label for="from">{{item.fromName}}</label> 
+              <a name="from" href="{{item.fromLink}}">{{item.fromLink}}</a>
+              <br/>
+              <label for="to">{{item.toName}}</label> 
+              <a name="to" href="{{item.toLink}}">{{item.toLink}}</a>
+          </div>
+      </li>
+  </ul>
+</div>
