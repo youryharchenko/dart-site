@@ -16,7 +16,7 @@ class ListService {
     Item(2, 
       "Box2d in Dart", "https://youryharchenko.github.io/site/box2d/", 
       "Forked from", "https://github.com/google/box2d.dart", 
-      "Adapted to Dart2 (In progress)", "https://github.com/feroult/box2d.dart"
+      "Adapted to Dart2", "https://github.com/feroult/box2d.dart"
     )
   ];
   Future<List<Item>> getList() async => mockList;
